@@ -1,0 +1,332 @@
+# Table of Contents
+```toc
+style: bullet
+min_depth: 1
+max_depth: 6
+allow_inconsistent_headings: true
+delimiter: "|"
+varied_style: false
+```
+# What are ratios?
+A ratio is a relation between the quantities of one, or multiple, different items/concepts.
+
+## Notation
+A ratio is usually notated by two components (numbers) that are separated with either a symbol or a word (separator):
+
+- 3:5
+- 3 to 5
+
+Or when written abstractly:
+
+- `component1 SEPARATOR component2`
+
+## Spotting ratios
+Since ratios are a relationship between the quantities of two different things, spotting them is quite easy. You just need to indentify the two items/concepts and their quantities.
+
+```
+If I have three bananas, and five apples, the ratio of bananas to apples is `3:5`.
+```
+
+The way this ratio is spotted is very simple, we search for an indication of the quantity of the bananas and apples. When the given sentence is dissected, we get the following information from it:
+
+- Three bananas
+- Five apples
+
+OR
+
+- Bananas = 3
+- Apples = 5
+
+When the ratio of `bananas to apples` is being asked, you can just replace the name of the items/concepts with the quantities that are written down. This will end up being: `3 to 5`.
+
+### Examples
+
+**Example 1**
+If I have three bananas, and five apples, the ratio of bananas to apples is `3:5`.
+
+**Example 2**
+If I add 1 cup of rice, to two cups of water, the ratio of water to rice is `2:1`.
+
+## Keeping track of calculated ratios
+When calculating multiples of a specific ratio, it can be helpful to keep track of them. The easiest way of doing this is through a ratio table.
+
+### Ratio tables
+A ratio table is nothing more than a tool to visualize the ratios between the quantities of multiple items. For example, if you have 2 T-shirts for each pair of pants that you own, the ratio table would look as follows:
+
+| T-shirts | Pants |
+|-|-|
+| 2 | 1 |
+| 4 | 2 |
+| 10 | 5 |
+
+This simple, but non-relatable, example is using some simple multiples like 2 and 5. In later sections the need for a ratio table will become clear once you start calculating larger quantities with non-trivial ratios.
+
+# Equivalent ratios
+An equivalent ratio is a ratio that, when multiplied or divided by another ratio, returns the initial ratio.
+
+## Validating a set of given ratios
+To check which ratios are equivalent, you can divide the first component of a given ratio, by all first components of the ratios that you need to validate. Then multiply the resulting number with the second component of your given ratio.
+
+If the ratios are equivalent, the last multiplication should give you the same number as the last component of the ratio that you were checking.
+
+This process can be written down as follows:
+
+```js
+var ratio1 = 7:6
+var ratio2 = 21:18
+
+var scalar = ratio2.component1 / ratio1.component1
+var possibleRatio2Component2 = ratio1.component2 * scalar
+
+if (possibleRatio2Component2 == ratio2.component2)
+{
+	// Is valid
+}
+else
+{
+	// Is not valid
+}
+```
+
+### Examples
+**Example 1**
+Select three ratios that are equivalent to 7:6.
+
+- (A) 12:14
+- (B) 21:18
+- (C) 42:36
+- (D) 63:54
+- (E) 84:62
+
+```js
+// Ratio A (not equivalent):
+12 / 7 = 1.71
+6 * 1.71 = 10.26
+
+// Ratio B (equivalent)
+21 / 7 = 3
+3 * 6 = 18 // Has the same value as the last component of the ratio (21:18)
+
+// Ratio C (equivalent)
+42 / 7 = 6
+6 * 6 = 36 // Has the same value as the last component of the ratio (42:36)
+
+// Ratio D (equivalent)
+63 / 7 = 9
+6 * 9 = 54  // Has the same value as the last component of the ratio (63:54)
+
+// Ratio E (Not equivalent)
+84 / 7 = 12
+6 * 12 = 72
+```
+
+### Handling ratios with a smaller first component value than your initial ratio
+
+In some cases, the ratio that you need to check can contain values that are lower than your initial ratio. In this situation we swap the places of the components within the given ratio around. The division keeps using the largest number as the first number. The result of that division can then be multiplied by the last component of the initial ratio.
+
+The following example uses the ratios `7:6` (initial) and `3.5:3`:
+
+```js
+7 / 3.5 = 2
+2 * 3 = 6 // Has the same value as the last component of the initial ratio (7:6)
+```
+
+# Part:whole ratios
+A part:whole ratio is a ratio that denotes a part of a quantity of one, or multiple, items.
+
+If we have 4 rows, and in each row there are 2 apples and 3 oranges, what would be the ratio of apples to fruit? To answer this question, we first need to think about how much fruit there actually is. Since we have 2 apples and 3 oranges, we can simply add then together to get the number of fruit.
+
+```js
+var appleAmount = 2;
+var orangeAmount = 3;
+
+var totalFruit = appleAmount + orangeAmount; // Which is 5 
+```
+
+Since we know that we have 5 pieces of fruit, the ratio of apples to fruit would be `2 to 5`. Funnily enough, we just created a fraction that denotes the amount of apples to total fruit.
+
+# Working with ratios
+This section applies the theory of the previous sections. It will also provide new theory when it's necessary for a certain technique or insight.
+
+## Calculating singular quantities based on an equivalent ratio
+When a ratio is known, it can be used to calculate other quantities of the same item. This can be done by getting to know the value of 1 quantity:
+
+If it takes a farmer 90 seconds to milk 2 cows, how long does it take him to milk 6 cows?
+
+We can get the time of milking 1 cow by dividing the given time (90 seconds) by the quanity of the items/concepts (2 cows). This will be 45 seconds (90 / 2 = 45). Now that the time is known for milking 1 cow, we just multiply that time by the quanity of items/concepts that we need, in our case that's 6 cows.
+
+The end result will be 270 seconds (45 * 6).
+
+### Examples
+**Example 1**
+If 4kg of almonds costs €34, how much does 5kg of almonds cost?
+
+```js
+34 / 4 = 8.5
+8.5 * 5 = 42.5
+```
+
+**Example 2**
+If Jake needs 28 seconds to fold 2 shirts, how long does he need to fold 5 shirts?
+
+```js
+28 / 2 = 14
+14 * 5 = 70
+```
+
+**Example 3**
+If 5kg of avocados cost €9, how much does 1kg of avocados cost?
+
+```js
+9 / 5 = 1.80
+1.80 * 1 = 1.80
+```
+
+## Calculating multiple quantities based on an equivalent ratio
+When a ratio between the quantities of multiple items is known, the same technique (calculating the quantity of a singular item) can be applied.
+
+Imagine a flower shop. The shop sells a bouquet with a ratio of 7 white flowers, to 5 red flowers. The shop sells this bouquet in the following sizes: small, medium, large, and extra large. The small bouquet uses the initial ratio (`7 to 5`), the medium bouquet is twice as big (`14 to 10`).
+
+The ratio table for this situation would look as follows:
+
+| Bouquet | White flowers | Red flowers |
+|-|-|-|
+| Small | 7 | 5 |
+| Medium | 14 | 10 |
+
+For the large bouquet, the flower shop wants to use 28 white flowers, and for the extra large bouqet 45 red flowers. What would the final ratio table look like?
+
+| Bouquet | White flowers | Red flowers |
+|-|-|-|
+| Small | 7 | 5 |
+| Medium | 14 | 10 |
+| Large | 28 | |
+| Extra large | | 45 |
+
+As mentiod earlier, the technique for calculating multiple quantities of a singular item, can also be applied here. For the large bouquet, we can simply divide 28 by 7 to know how many times the first component of the base ratio was multiplied:
+
+```js
+28 / 7 = 4 // First component
+```
+
+Once we know how many times the base ratio's first component has been multipled, we can do the same to the second component:
+
+```js
+28 / 7 = 4 // First component
+4 * 5 = 20 // Second conmponent
+```
+
+The ratio table now looks like this:
+
+| Bouquet | White flowers | Red flowers |
+|-|-|-|
+| Small | 7 | 5 |
+| Medium | 14 | 10 |
+| Large | 28 | 20 |
+| Extra large | | 45 |
+
+We can follow the same procedure for the second component, only this time we start by figuring out how many times the second component was multiplied:
+
+```js
+45 / 5 = 9 // Second component
+```
+
+Once we know how many times the second component was multiplied, we do the same to the first component:
+
+```js
+45 / 5 = 9 // Second component
+9 * 7 = 63 // First component
+```
+
+The full ratio table now looks like this:
+
+| Bouquet | White flowers | Red flowers |
+|-|-|-|
+| Small | 7 | 5 |
+| Medium | 14 | 10 |
+| Large | 28 | 20 |
+| Extra large | 63 | 45 |
+
+### Important remarks
+It may be very tempting to swap around the multiplied size of a quantity, with the initial size of a quantity. DO NOT DO THIS. It will give back a wrong result.
+
+## Calculating a total based on a ratio
+John wrote a survey that has a ratio of 5 open-ended questions to 4 multiple-choice questions. How many total questions would John have with 8 multiple choice questions?
+
+We first need to know how much open-ended questions there are for 4 multiple-choice questions. We do this as follows:
+
+```js
+8 / 4 = 2
+2 * 5 = 10 // Open-ended questions
+```
+
+Now that we know how much open-ended questions there are, we add that to the 8 multiple-choice questions and we will end up with 18.
+
+A shortcut can be taken by calculating the multiplication amount from the inital 8 multiple-choice questions, and immediately multiplying it by the total amount of questions:
+
+```js
+8 / 4 = 2
+2 * 9 = 18 // Total questions
+```
+
+This is a more elegant and faster solution than having to add up the two separate components of a ratio.
+
+## Calculating a quantity/part from a total
+John wrote a survey that has a ratio of 5 open-ended questions to 4 multiple-choice questions. How many multiple-choice questions would John have with 45 total questions?
+
+The first thing that we need to do is calculate the total number of questions. Since the ratio is `5 to 4` we simply add those numbers up, this results in 9. We can use this to see how many times our initial ratio was multiplied to get to 45 total questions:
+
+```js
+45 / 9 = 5
+```
+
+Now that we know the inital ratio was multiplied 5 times, we simply multiply that with the amount of multiple-choice questions that the initial ratio states.
+
+```js
+5 * 4 = 20 // Multiple-choice questions
+```
+
+## Interpreting unequal ratios
+In some cases, two unequal ratios are being used to determine something.
+
+### Determine which quantity per item is larger
+If John uses 19 grams of pepper per 4 chicken breasts, and Jane uses 25g of pepper per 6 chicken breasts, who's chicken breasts has the strongest pepper taste?
+
+Determining this is quite simple. We can calculate the amount of pepper John would use for 6 breasts, and then compare that to the amount Jane uses.
+
+```js
+// John
+19 / 4 = 4.75 // For one chicken breast
+4.75 * 6 = 28.5 // For six chicken breasts
+```
+
+As we calculated, John uses 28.5 grams of pepper for 6 chicken breasts. That's more than Jane uses. Therefore John's chicken breasts will have a stronger pepper flavor.
+
+## Creating an equivalent ratio from a diagram
+Equivalent ratios can be constructed from diagrams that display two different quantitites.
+
+The diagram below shows the number of grandparents and cousins that a family has visited during their holiday:
+
+```
+// Grandparents
+[] [] [] []
+[] [] [] [] [] []
+// Cousins
+```
+
+What is the ratio of grandparents to cousins that the family has visited?
+
+The first thing that we need to do is to create a temporary 'ratio' with the data from the diagram. The family has visited 4 grandparents and 6 cousins, our temporary 'ratio' will be `4:6`. We then need to actually create an equivalent ratio out of this. The way we do this is to divide the temporary ratio by the same number. The easiest way of going about this is to divide the lowest component by the highest possible number. In this case, there aren't really any high numbers we can try. We can't divide by 4 since 6 is not divisible by 4. Dividing by 3 is difficult since 4 is not divisible by 3. Dividing by 1 returns the same numbers to us. We can divide both numbers by 2 though. This will give us the equivalent ratio of `2:3`.
+
+The answer to the question is `2:3`
+
+## Creating an equivalent ratio from a part:whole ratio
+Some larger ratios can be simplified into smaller equivalent ratios.
+
+If you have a mixture of paint that uses 12 parts yellow to 8 parts red paint, what is the ratio of red to total paint?
+
+The first reaction you may have is to calculate.... something. In this case that doesn't need to be done. The question literally is "what is the ratio of  **red to total** paint". You simply have to add the yellow and red parts together, this will result in 20. The ratio is `8 to 20`.
+
+Creating an equivalent ratio based on `8:20` uses the same procedure as creating an equivalent ratio from a diagram. We need to see with which number we can divide both numbers by. In this case, the highest possible number we can go is 4. When dividing both numbers by 4 we get the following equivalent ratio: `2:5`.
+
+The equivalent ratio is: `2:5`.
