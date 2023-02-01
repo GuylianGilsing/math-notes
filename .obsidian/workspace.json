@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d56fc3ecef86bdc1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fundamentals/Ratios.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "8de94de185509c99",
             "type": "leaf",
             "state": {
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -119,9 +106,9 @@
   },
   "active": "8de94de185509c99",
   "lastOpenFiles": [
-    "README.md",
-    "Fundamentals/Fractions.md",
     "Fundamentals/Ratios.md",
+    "Fundamentals/Fractions.md",
+    "README.md",
     "().md",
     "Basics/Untitled.md"
   ]
