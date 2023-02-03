@@ -20,7 +20,7 @@ Within this notebook, fractions are notated as follows:
 2/3
 4/4
 1/4
-2/2
+5/2
 ```
 
 Or written more abstractly:
@@ -42,10 +42,8 @@ Proper fractions are fractions where the numerator does not exceed the denominat
 9/9
 ```
 
-When thinking about fractions as numbers, a proper fraction is a number that stays between 0 and 1.
-
 ## Improper fractions
-Improper fractions are fractions where the numerator exceeds the denominator. These fractions are usually used to denote how many parts of a single whole are counted. The following fractions are all improper:
+Improper fractions are fractions where the numerator exceeds the denominator. The following fractions are all improper:
 
 ```
 3/2
@@ -54,13 +52,144 @@ Improper fractions are fractions where the numerator exceeds the denominator. Th
 10/2
 ```
 
-When thinking about fractions as numbers, an improper fraction is the same as a proper fraction, it only exceeds past the limit of 1.
+## Equivalent fractions
 
-## Recognizing fractions
-Fractions can be represented in many different ways. This section lists a few common representations and how to form fractions with them.
 
-### Inside highlighted diagrams
-When spotting sections inside a highlighted diagram, the first thing to look for is that the diagram has been divided evenly. A fraction can't be formed when the diagram has not been divided evenly.
+## Interpreting fractions
+Fractions can be interpreted in all sorts of different ways. The following concepts are given, and in most cases explained.
+
+### As part of a whole quantity
+A fraction can be interpreted as a part of a whole quantity. For example, if a pizza has `4` slices and someone eats `3` slices. They have eaten `3/4` of the pizza.
+
+### As a whole number
+A fraction can be interpreted as a whole number. This number is between `0` and `1` when the fraction is proper. If the number exceeds `1` than the fraction is improper.
+
+### As a division of two numbers
+A fraction can be interpreted as a division of two numbers. For example the fraction `1/4` can be seen as `1 divided by 4` or `1 / 4`, which results in the number `0.25`.
+
+## Representing fractions
+Fractions can be represented in a lot of different ways. This section details some of the more common ways of representing and thinking about fractions.
+
+### Representing 1 as a fraction
+If we want to represent `1` as a fraction, we need a fraction that indicates that all parts of the whole have been counted. Such a fraction can be formed by letting the numerator and denominator have the same value.
+
+The numerator inside a fraction indicates how many parts of the whole have been counted. When it contains the same number as the denominator, it means that all parts of the whole have been counted.
+
+The following fractions are all representations of the number `1`:
+
+```
+1/1
+2/2
+3/3
+4/4
+5/5
+6/6
+```
+
+### Representing a fraction as a number
+If we think of fractions as a division of two numbers, we can produce a whole number out of them by dividing the numerator by the denominator. The fractions listed below produce the following numbers:
+
+```
+4/4 (OR 4 / 4) = 1
+12/4 (OR 12 / 4) = 3
+3/6 (OR 3 / 6) = 0.5
+```
+
+#### Using diagrams
+When multiple wholes are given, we can form a fraction that represents the amount of wholes that we have.
+
+```
+A [x] [x] [x] [x] [x]
+
+B [x] [x] [x] [x] [x]
+
+C [x] [x] [x] [x] [x]
+```
+*Diagram A, B, and C, each diagram represents one whole*
+
+Using diagram `A`, `B`, and `C`, we can see that we have 3 wholes. The resulting fraction (a fraction that represents the amount of wholes that we have.) is `3/1`.
+
+We can verify that the fraction represents the amount of wholes that we have by dividing the numerator by the denominator. This gives us the number `3 / 1 = 3`. This proves that the fraction represents the amount of wholes that we have.
+
+### Representing whole numbers larger than 1 as a fraction
+A whole number can be represented as a fraction by keeping the number as the denominator, and multiplying that denominator by a certain amount to create a numerator.
+
+```js
+var denominator = 4;
+var numerator = denominator * 3 = 12
+
+var fraction = new Fraction(numerator, denominator) // 12/4
+```
+*This example turns the number 4 into the fraction `12/4`*
+
+### Using a number line
+When using a number line, we are forced to think about fractions as a number between `0` and `1`. On the number line, the numerator of a fraction is located as a divider (or part) between the `0` and `1`. The amount of dividers are based on the denominator of the fraction that you are representing.
+
+The number line below represents the fraction `1/5`.
+
+```
+0 -- | -- | -- | -- | -- |
+    1/5  2/5  3/5  4/5  5/5
+```
+
+As you can see, the dividers are place directly after the `0`. We have `5` dividers since our denominator has the value of `5`.
+
+#### Proper fractions
+Representing proper fractions uses the basic theory that is explained in the section above. The only difference is how we handle a fraction like `5/5` or `4/4`. A fraction like that is represented as `1` on the number line.
+
+```
+0 -- | -- | -- | -- 1
+    1/4  2/4  3/4  4/4
+```
+*This number line represents the fraction `1/4`*
+
+A good way of deciding how many dividers you need between `0` and `1` is by subtracting `1` from the denominator. In the number line above, we need `4 - 1` dividers since the 4th divider is being marked as `1`. 
+
+#### Improper fractions
+Improper fractions on a number line use the same concept as proper fractions on a number line. However, this time we just keep adding to the numerator.
+
+```
+0 -- | -- | -- | -- 1 -- | -- | -- | -- 2 -- | -- | -- | -- 3
+    1/4  2/4  3/4  4/4  5/4  6/4  7/4  8/4
+```
+*This number line represents the fraction `1/4`*
+
+As the number line above shows, an improper fraction like 8/4 can be represented as the number 2.
+
+#### Finding number 1 using a fraction
+```
+0 -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
+         2/5
+```
+*This number line represents the fraction `2/5`*
+
+Using the fraction `2/5` finding number one is quite easy, the only thing that we need to do is add  `1` to the numerator for each division until we hit `5/5`.
+
+```
+0 -- | -- | -- | -- | -- 1 -- | -- | -- | -- | -- |
+         2/5  3/5  4/5  5/5
+```
+*This number line represents the fraction `2/5`*
+
+We represent `5/5` as the number `1` on our number line since it is the highest possible numerator in our proper fraction.
+
+#### Finding numbers higher than 1 using a fraction
+```
+0 -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
+         2/5
+```
+*This number line represents the fraction `2/5`*
+
+Using the fraction `2/5` finding a number like two is a bit more tricky, Since we know that `5/5` represents 1, a number like 2 should be represented as the fraction `10/5` since it is twice as much as `1`.
+
+```
+0 -- | -- | -- | -- | -- 1 -- | -- | -- | -- | -- 2
+         2/5  3/5  4/5  5/5  6/5  7/5  8/5  9/5 10/5
+```
+*This number line represents the fraction `2/5`*
+
+## Forming fractions from a diagram
+When forming fractions from a diagram, the most important thing to note is that the diagram is divided evenly. If this is not the case then a fraction can't be formed.
 
 The diagram below can be used to form a fraction since it has been divided evenly:
 
@@ -76,7 +205,7 @@ The diagram below can't be used to form a fraction since it hasn't been divided 
 [   ] [] []
 ```
 
-#### Proper fractions
+### Proper fractions
 This section uses the following highlighted diagram:
 
 ```
@@ -84,33 +213,29 @@ This section uses the following highlighted diagram:
 [ ] [x] [ ]
 ```
 
-When forming a fraction with an evenly divided diagram, the first step is to obtain the denominator. Using the diagram above, we can see that there are 6 pieces inside the diagram, thus our denominator is 6.
+When forming a fraction with an evenly divided diagram, the first step is to obtain the denominator. Using the diagram above, we can see that there are `6` pieces inside the diagram, thus our denominator is `6`.
 
-The second step is to see which parts inside the diagram are highlighted. We can see that 3 pieces are hightlighted, thus our numerator is 3.
+The second step is to see which parts inside the diagram are highlighted. We can see that `3` pieces are hightlighted, thus our numerator is `3`.
 
 The final fraction is `3/6`.
 
-#### Improper fractions
-**Warning**: This explanation is quite confusing and only exists because Khan Academy has this exact question inside their course.
+### Improper fractions
+Just imagine that one pizza consists out of 3 slices. Using diagrams `A`, `B`, and `C` below, what fraction of the pizza has been eaten?
 
 ```
-// A
-[] [] []
+A [] [] []
 ```
-*Diagram A, this diagram represents one whole*
+*Diagram A, this diagram represents one whole pizza*
 
 ```
-// B
-[x] [ ] [X]
+B [x] [ ] [X]
 
-// C
-[x] [x] [x]
+C [x] [x] [x]
 ```
-*Diagram B and C, these two diagrams display the amount of highlighted sections inside the whole*
+*Diagram B and C, these two diagrams display the amount of slices eaten*
 
-When forming a fraction, and multiple diagrams are shown that represent the parts of a whole, an improper fraction needs to be formed.
+The first step to this confusing question is to form the fractions that are presented by diagrams `B` and `C`. Diagram `B` forms the fraction `2/3` and diagram `C` forms the fraction `3/3`. The question asks how many slices have been eaten. We can add the numerators of the fractions from diagram `B` and 'C' together to get the amount of slices eaten. When we do this we see that a total of `5` slices have been eaten. Since our whole pizza consists out of `3` slices total, our fraction will be `5/3`.
 
-The first step is to form fractions based on diagrams B and C, this gives us `2/3` (diagram b) and `3/3` (diagram C). The last step is to add the numerators together while ignoring the denominators. This leaves us with the fraction `5/3`.
+**Clarification**: the formed improper fraction (`5/3`) represents how many slices of the whole pizza have been eaten. It's because of this that we do not add the denominators together.
 
-The formed improper fraction (`5/3`) represents how many pieces of the whole have been highlighted. It's because of this that we do not add the denominators together.
-
+**Note**: a question that is constructed as is presented here is very confusing because it creates an impossible scenario. A person can't eat `5` slices of a pizza that only has `3` slices. This concept is the exact same as the concept of improper fractions on a number line. Only visualizing it in a way like this makes it confusing since it's impossible to do in the real world.
