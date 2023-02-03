@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fundamentals/Fractions.md",
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0d466f345e22821f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Fundamentals/1. Multiplication.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -77,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Fundamentals/Fractions.md",
+                "file": "Fundamentals/1. Multiplication.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,11 +117,12 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "8de94de185509c99",
+  "active": "0d466f345e22821f",
   "lastOpenFiles": [
-    "Fundamentals/Ratios.md",
-    "Fundamentals/Fractions.md",
     "README.md",
+    "Fundamentals/1. Multiplication.md",
+    "Fundamentals/Fractions.md",
+    "Fundamentals/Ratios.md",
     "().md",
     "Basics/Untitled.md"
   ]
