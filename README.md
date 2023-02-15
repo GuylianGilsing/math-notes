@@ -10,6 +10,9 @@ The information that this repository houses is separated into a few sections:
 **Fundamentals**
 This is fundamental knowledge that one should know when going through everyday life, and when diving into more advanced mathematics/calculus.
 
+# Note structure
+The notes are being structured in a way that enables a person to quickly find a specific application of a concept.
+
 # Notation
 A certain notation is being used throughout all my notes. These notations are based on Javascript mixed with more general mathmatical syntax. It should not be run as Javascript since it would result in errors.
 
