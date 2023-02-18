@@ -4,64 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "2d5edba0daf82c2c",
+        "id": "f38fe3faace58c74",
         "type": "tabs",
         "children": [
           {
-            "id": "8de94de185509c99",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fundamentals/3. Subtraction.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "81c3a318b90424cf",
+            "id": "68f63807659e7fbb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Fundamentals/2. Addition.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f507fac8b7bf3ef0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fundamentals/4. Multiplication.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2864dddfe589f59b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fundamentals/5. Division.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "26197dd33454e6da",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fundamentals/1. Numbers.md",
                 "mode": "source",
                 "source": false
               }
@@ -125,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Fundamentals/3. Subtraction.md",
+                "file": "Fundamentals/2. Addition.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,17 +104,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "8de94de185509c99",
+  "active": "68f63807659e7fbb",
   "lastOpenFiles": [
-    "Fundamentals/2. Addition.md",
-    "Fundamentals/1. Numbers.md",
-    "Fundamentals/6. Fractions.md",
-    "Fundamentals/5. Division.md",
     "Fundamentals/4. Multiplication.md",
+    "Fundamentals/5. Division.md",
     "Fundamentals/3. Subtraction.md",
-    "README.md",
-    "Fundamentals/Ratios.md",
-    "().md",
-    "Basics/Untitled.md"
+    "Fundamentals/1. Numbers.md",
+    "Fundamentals/2. Addition.md",
+    "Fundamentals/7. Square roots.md",
+    "Fundamentals/6. Exponents.md",
+    "Fundamentals/9. Ratios.md",
+    "Fundamentals/8. Fractions.md",
+    "README.md"
   ]
 }
