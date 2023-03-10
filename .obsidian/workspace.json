@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fundamentals/8. Fractions.md",
+                "file": "Fundamentals/5. Division.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Fundamentals/8. Fractions.md",
+                "file": "Fundamentals/5. Division.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,15 +106,15 @@
   },
   "active": "9e646737e7dc84c0",
   "lastOpenFiles": [
+    "Fundamentals/3. Subtraction.md",
+    "Fundamentals/8. Fractions.md",
     "Fundamentals/7. Square roots.md",
     "Fundamentals/6. Exponents.md",
     "Fundamentals/5. Division.md",
     "Fundamentals/4. Multiplication.md",
-    "Fundamentals/3. Subtraction.md",
     "Fundamentals/2. Addition.md",
     "Fundamentals/1. Numbers.md",
     "Fundamentals/9. Ratios.md",
-    "Fundamentals/8. Fractions.md",
     "README.md"
   ]
 }
