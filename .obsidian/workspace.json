@@ -6,6 +6,7 @@
       {
         "id": "f38fe3faace58c74",
         "type": "tabs",
+        "dimension": 71.95431472081218,
         "children": [
           {
             "id": "9e646737e7dc84c0",
@@ -17,7 +18,26 @@
                 "mode": "source",
                 "source": false
               }
-            }
+            },
+            "group": "0036f19c07d26d73"
+          }
+        ]
+      },
+      {
+        "id": "7ff9b975037ed3c2",
+        "type": "tabs",
+        "dimension": 28.045685279187815,
+        "children": [
+          {
+            "id": "8655162b3a9f247d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Fundamentals/4. Multiplication.md"
+              }
+            },
+            "group": "0036f19c07d26d73"
           }
         ]
       }
@@ -93,6 +113,16 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "dbb6a3d2ff53afb0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Fundamentals/4. Multiplication.md"
               }
             }
           }
